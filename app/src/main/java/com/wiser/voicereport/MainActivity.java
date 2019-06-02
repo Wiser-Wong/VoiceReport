@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     private void startAuto(String data) {
         if (data == null || "".equals(data)) return;
         // 设置音调，值越大声音越尖（女生），值越小则变成男声,1.0是常规
-        textToSpeech.setPitch(1.0f);
+        textToSpeech.setPitch(0.9f);
         // 设置语速
-        textToSpeech.setSpeechRate(0.3f);
+        textToSpeech.setSpeechRate(0.8f);
         textToSpeech.speak(data,//输入中文，若不支持的设备则不会读出来
                 TextToSpeech.QUEUE_FLUSH, null);
     }
